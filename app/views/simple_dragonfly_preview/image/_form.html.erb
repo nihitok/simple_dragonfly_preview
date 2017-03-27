@@ -4,7 +4,7 @@
       <% if f.object.send("#{attribute_name}_uid") %>
         <%= image_tag f.object.send(attribute_name).thumb(resize).url, id: image_id %>
         <div>
-          <%= f.label("remove_#{attribute_name}", "Remove?") %>
+          <%= f.label("remove_#{attribute_name}", "削除") %>
           <%= f.check_box("remove_#{attribute_name}") %>
         </div>
       <% else %>
